@@ -1,0 +1,11 @@
+commit 5a53888ebb81fd1bb7b79e30150911ca6c8830f7
+Author: Gonzalo G <tritio2@gmail.com>
+Date:   Fri Jul 15 09:40:44 2016 +0200
+
+    cambiamos tips1.html
+
+commit 63a0b6ab172500e8fc65dbe4a6c4621072cf67e6
+Author: Gonzalo G <tritio2@gmail.com>
+Date:   Fri Jul 15 09:35:44 2016 +0200
+
+    cambios realizados en d3
