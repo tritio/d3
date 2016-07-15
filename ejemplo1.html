@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ejemplo d3.js</title>
+
+	<style>
+		div {
+			background-color: red;
+		}
+	</style>
+	 <script type="text/javascript" src="d3/d3.js"></script>
+</head>
+<body>
+	<script>
+		 d3.select("body").append("p").text("un ejemplo");
+
+		 var body = d3.select("body");
+         var div = body.append("div");
+         div.text("New paragraph!");
+
+	</script>
+</body>
+</html>
