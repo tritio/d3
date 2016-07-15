@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "pepe",
+    "altura": 170,
+    "peso": 55
+  },
+  {
+    "nombre": "antonia",
+    "altura": 164,
+    "peso": 49
+  },
+  {
+    "nombre": "david",
+    "altura": 187,
+    "peso": 87
+  },
+  {
+    "nombre": "amaya",
+    "altura": 167,
+    "peso": 62
+  },
+  {
+    "nombre": "carla",
+    "altura": 170,
+    "peso": 63
+  },
+  {
+    "nombre": "gimena",
+    "altura": 168,
+    "peso": 70
+  },
+  {
+    "nombre": "mario",
+    "altura": 177,
+    "peso": 71
+  }
+]
