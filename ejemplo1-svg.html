@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Primer ejemplo d3.js con SVG</title>
+
+	<style>
+		.bar {
+			display: inline-block;
+			width: 20px;
+			background-color: teal;
+			margin-right: 4px;
+
+		}
+
+
+	</style>
+	 <script type="text/javascript" src="d3/d3.js"></script>
+</head>
+<body>
+	<script>
+		var dataset = [5,10,15,20,25];
+		var w = 1000;
+		var h = 100;
+
+
+
+		 var svg = d3.select("body").append("svg");
+
+		 svg.attr("width", w)
+		 	.attr("height", h);
+
+		var circles =  svg.selectAll('circles')
+						  .data(dataset)
+						  .enter()
+						  .append('circle');
+
+			circles.attr('cx', function(d, i) {
+						  	return (i * 50) + 25;  // i is a numeric index value of the current element. Counting starts at zero, so for our “first” circle i == 0, the second circle’s i == 1, and so on.
+						  })
+						  .attr('cy', h/2)
+						  .attr ('r', function(d) {
+						  	return d;
+						  })
+						  .attr("fill", "yellow")
+						  .attr("stroke", "orange")
+						  .attr("stroke-width", function(d) {
+						  	return d/2;
+						  });
+
+	</script>
+	<p>asdfasdf</p>
+	<p>adsfa fa gafg gf</p>
+</body>
+</html>

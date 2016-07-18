@@ -6,20 +6,43 @@
 	<title>ejemplo d3.js</title>
 
 	<style>
-		div {
-			background-color: red;
+		.bar {
+			display: inline-block;
+			width: 20px;
+			background-color: teal;
+			margin-right: 4px;
+
 		}
+
+
 	</style>
 	 <script type="text/javascript" src="d3/d3.js"></script>
 </head>
 <body>
 	<script>
+		var dataset = [];
+		for (var i = 0; i < 25 ; i++) {
+			var nuevoNumero = Math.floor(Math.random() * 30) ;
+			dataset.push(nuevoNumero);
+		}
+
 		 d3.select("body").append("p").text("un ejemplo");
 
-		 var body = d3.select("body");
-         var div = body.append("div");
-         div.text("New paragraph!");
+         d3.select('body').selectAll('div')
+         .data(dataset)
+         .enter()
+         .append('div')
+         .attr('class','bar')
+         .style("height", function(d) {
+         	var alturaBarra = d * 5;
+         	return alturaBarra + "px";
+         });
+
+
+
 
 	</script>
+	<p>asdfasdf</p>
+	<p>adsfa fa gafg gf</p>
 </body>
 </html>
